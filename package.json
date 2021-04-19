@@ -4,7 +4,8 @@
   "description": "server for muslces app based on graphql",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js",
+    "start": "serverless offline start",
+    "start_local": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,6 +17,8 @@
     "dotenv": "^8.2.0",
     "graphql": "^15.5.0",
     "mysql": "^2.18.1",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "serverless-dotenv-plugin": "^3.9.0",
+    "serverless-offline": "^6.9.0"
   }
 }

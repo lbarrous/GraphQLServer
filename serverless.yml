@@ -1,4 +1,7 @@
 # serverless.yml
+plugins: # List of plugins of use on application
+  - serverless-offline # Get your serverless configuration and run the server local
+  - serverless-dotenv-plugin # Help with .env management files
 service: apollo-lambda
 provider:
   name: aws
